@@ -99,7 +99,7 @@ body{
 
 /* NAVEGADOR */
 .nav{
-    background: rgba(0,0,0, .6);
+    background: rgba(255, 255, 255, 0.6);
     width: 90%;
     margin: 0 auto;
     border-radius: 10px;
@@ -209,7 +209,7 @@ body{
     text-align: center;
     font-weight: 500;
     color: #DC2ADE;
-    background: rgba(0,0,0, .8);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
 }
 
@@ -303,7 +303,7 @@ body{
 }
 
 .footer{
-    background: rgba(0,0,0, .8);
+    background: rgba(255, 255, 255, 0.6);
     width: 100%;
     margin: 0 auto;
     padding: 40px;
