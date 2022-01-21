@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ body{
     background-image: url(https://c.wallhere.com/photos/62/db/bricks-118325.jpg!d);
     background-size: cover;
     letter-spacing: 0.09rem;
+    /* font-family: 'Luxurious Roman', cursive; */
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -104,7 +107,7 @@ body{
 }
 
 .nav_links:hover{
-    border-bottom: #323EDD groove 1px;
+    border-top: #323EDD groove 1px;
     transition: all 0.5s ease;
 }
 
