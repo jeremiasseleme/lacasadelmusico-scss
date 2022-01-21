@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body{
     background-image: url(https://c.wallhere.com/photos/62/db/bricks-118325.jpg!d);
     background-size: cover;
     letter-spacing: 0.09rem;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* HEADER */
@@ -44,7 +46,7 @@ body{
 .nav{
     background: rgba(255, 255, 255, 0.6);
     width: 97%;
-    margin: 0 auto;
+    margin: 1rem auto;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -137,7 +139,7 @@ body{
 }
 /* PRODUCTOS DESTACADOS */
 .destacados{
-    width: 70%;
+    width: 55%;
     height: auto;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -152,7 +154,7 @@ body{
 .destacados:hover{
     transform: rotateY(25deg) scale(1.1);
     cursor: pointer;
-    transition: all 0.9s ease-out;
+    transition: all 0.1s ease-out;
 }
 
 .div_destacados{
@@ -346,6 +348,18 @@ body{
     .cont_productos{
         margin:2px 2px;
     }
+}
+
+/* PAGINA CUERDAS */
+.imgPagina{
+    max-height: 20rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.imgPagina img{
+    display: block;
+    width: 95%;
+    margin:1rem auto;
 }
 
 @media(max-width:425px){
