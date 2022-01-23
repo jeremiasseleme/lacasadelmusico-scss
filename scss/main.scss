@@ -5,12 +5,17 @@
 }
 
 body{
-    // background-image: url(https://c.wallhere.com/photos/62/db/bricks-118325.jpg!d);
+    background-image: url("https://c.wallhere.com/photos/62/db/bricks-118325.jpg!d");
     background-size: cover;
     letter-spacing: 0.09rem;
     /* font-family: 'Luxurious Roman', cursive; */
     font-family: 'Roboto Condensed', sans-serif;
 }
+// ___________
+// VARIABLES
+// ___________
+@import "./VARIABLES/colores";
+@import "./VARIABLES/mediaqueries";
 
 // ___________
 // SECCIONES
@@ -18,4 +23,3 @@ body{
 @import "./SECCIONES/header";
 @import "./SECCIONES/principal";
 @import "./SECCIONES/footer";
-@import "./VARIABLES/mediaqueries"

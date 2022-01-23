@@ -4,10 +4,35 @@
   box-sizing: border-box; }
 
 body {
+  background-image: url("https://c.wallhere.com/photos/62/db/bricks-118325.jpg!d");
   background-size: cover;
   letter-spacing: 0.09rem;
   /* font-family: 'Luxurious Roman', cursive; */
   font-family: 'Roboto Condensed', sans-serif; }
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .formContainerFooter {
+    width: 80%; }
+  .formContainer {
+    width: 80%; }
+  .div_destacados {
+    width: 100%; }
+  .cont_productos {
+    margin: 2px 2px; } }
+
+@media (max-width: 425px) {
+  /* .slider{
+        display: none; */
+  /* } */
+  .formContainerFooter {
+    width: 90%; }
+  .formContainer {
+    width: 90%; } }
 
 /* HEADER */
 .header {
@@ -265,27 +290,3 @@ body {
   .footer .texto_footer {
     text-align: center;
     color: black; }
-
-/* MEDIA QUERIES */
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .formContainerFooter {
-    width: 80%; }
-  .formContainer {
-    width: 80%; }
-  .div_destacados {
-    width: 100%; }
-  .cont_productos {
-    margin: 2px 2px; } }
-
-@media (max-width: 425px) {
-  /* .slider{
-        display: none; */
-  /* } */
-  .formContainerFooter {
-    width: 90%; }
-  .formContainer {
-    width: 90%; } }
