@@ -1,0 +1,191 @@
+/* SLIDER */
+.main{
+    .slider{
+        width: 95%;
+        max-height: 35rem;
+        overflow: hidden;
+        margin: 30px auto;
+    }
+    /* SECTION INDEX */
+    .sectionIndex{
+        width: 75%;
+        margin: 1rem auto;
+        padding: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        border-radius: 15px;
+        .tdestacado{
+            color:  #DC2ADE;
+            font-weight: bold;
+            font-size:larger
+        }
+        
+        .textoSection{
+            text-align: center;
+            padding: 0.05rem;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/* PRODUCTOS DESTACADOS */
+.destacados{
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-weight: 500;
+    color: #DC2ADE;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    &:hover{
+        transform: rotateY(25deg) scale(1.1);
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+    }
+}
+
+
+
+.div_destacados{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .cont_productos{
+        height: 350px;
+        width: 200px;
+        box-shadow: 0 2px 2px rgba(0,0,0, .2);
+        margin:15px 15px;
+        background-color: white;
+        border-radius: 10px;
+        transition: all 0.7s;
+        &:hover{
+            transform: translateY(-5px) scale(1.05);
+            border: solid #DC2ADE 2px;
+        }
+        .card{
+            height: 40px;
+            width: 100%;
+            margin-bottom: 170px;
+            img{
+                margin: auto;
+                display: block;
+                height: 190px;
+                width: 190px;
+            }
+        }
+        .info{
+            height: 70px;
+            width: 100%;
+            border-bottom: solid 1px #555;
+            h2{
+                font-size: 0.99em;
+                text-align: center;
+                margin-bottom: 0.3em;
+            }
+            
+            p{
+                text-align: center;
+                font-size: .9em;
+                color: #555;
+            }
+        }
+        .precio{
+            height: 50px;
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .box_precio{
+                width: 80px;
+                .precio1{
+                    color: red;
+                    font-size: .8em;
+                }
+                
+                .precio2{
+                    font-size:1.5em;
+                }
+            }
+            .shoping{
+                font-size: 1.5em;
+                color: #555;
+            }
+        }
+    }
+}
+
+/* FORMULARIO CONTACTO */
+.formContainer{
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1.5rem 1rem;
+    background-color: #323EDD;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.formContainerFooter{
+    width: 30%;
+    margin: 0.5rem auto;
+    padding: 1rem 1rem;
+    background-color:rgba(199, 53, 192, 0.8);
+    border-radius: 0.5rem;
+}
+.form{
+    text-align: center;
+}
+.form__label{
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+}
+.form__input, .form__textarea{
+    width: 60%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #060941;
+    color: white;
+    border: none;
+    border-bottom: solid 1px #c87d5d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+.form__textarea{
+    height: 5rem;
+    resize: none;
+}
+.form__input:focus, .form__textarea:focus{
+    outline: none;
+}
+.form__input--submit{
+    background-color: #040f9e;
+    margin-top: 1.5rem;
+    border-radius: 0.3rem;
+    border-bottom: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.form__input--submit:hover{
+    background-color:#14195f;
+}
+
+/* PAGINA IMG */
+.imgPagina{
+    max-height: 20rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    img{
+        display: block;
+        width: 95%;
+        margin:1rem auto;
+    }
+}

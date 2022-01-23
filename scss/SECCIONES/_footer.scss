@@ -1,0 +1,29 @@
+/* FOOTER */
+.footer{
+    background: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    margin: 1rem auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    .imgfooter{
+        width: 90%;
+        margin:-25px auto;
+    }
+    .logo_footer{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .texto_footer{
+        text-align: center;
+        color:black;
+    }
+}
+
+
+
+
+
