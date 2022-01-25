@@ -5,9 +5,11 @@
     margin: 1rem auto;
     padding: 15px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 15px;
     .imgfooter{
         width: 90%;
         margin:-25px auto;

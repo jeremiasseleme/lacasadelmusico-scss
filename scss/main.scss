@@ -15,7 +15,6 @@ body{
 // VARIABLES
 // ___________
 @import "./VARIABLES/colores";
-@import "./VARIABLES/mediaqueries";
 
 // ___________
 // SECCIONES
@@ -23,3 +22,4 @@ body{
 @import "./SECCIONES/header";
 @import "./SECCIONES/principal";
 @import "./SECCIONES/footer";
+@import "./VARIABLES/mediaqueries";

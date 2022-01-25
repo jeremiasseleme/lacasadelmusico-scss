@@ -1,17 +1,13 @@
 
 /* MEDIA QUERIES */
 
+
 @media(max-width:768px){
-    .footer{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .formContainerFooter{
-        width: 80%;
+        width: 90%;
     }
     .formContainer{
-        width: 80%;
+        width: 70%;
     }
     .div_destacados{
         width: 100%;
@@ -25,9 +21,6 @@
     /* .slider{
         display: none; */
     /* } */
-    .formContainerFooter{
-        width: 90%;
-}
     .formContainer{
         width: 90%;
     }

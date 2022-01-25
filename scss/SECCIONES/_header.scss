@@ -1,7 +1,6 @@
 /* HEADER */
 .header{
     position: sticky;
-    top: 2px;
     z-index: 10;
     /* NAVEGADOR */
 .nav{
@@ -19,9 +18,19 @@
         .nav_li{
             list-style: none;
             padding: 10px 10px;
+            .nav_links{
+                color: #DC2ADE;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 10px;
+                &:hover {
+                    border-top: #323EDD groove 1px;
+                    transition: all 0.5s ease;
+                }
+            }
             .nav_sub{
-                position: absolute;
-                display: none;
                 list-style: none;
                 margin-top: 15px;
                 margin-left: 15px;
@@ -44,18 +53,6 @@
                         font-size: 20px;
                         font-weight: 400;
                     }
-                }
-            }
-            .nav_links{
-                color: #DC2ADE;
-                padding: 10px;
-                text-decoration: none;
-                font-size: 20px;
-                font-weight: 600;
-                border-radius: 10px;
-                &:hover {
-                    border-top: #323EDD groove 1px;
-                    transition: all 0.5s ease;
                 }
             }
         }

@@ -1,5 +1,6 @@
 /* SLIDER */
 .main{
+    width:auto;
     .slider{
         width: 95%;
         max-height: 35rem;
@@ -15,7 +16,7 @@
         text-align: center;
         border-radius: 15px;
         .tdestacado{
-            color:  #DC2ADE;
+            color: $fucsia;
             font-weight: bold;
             font-size:larger
         }
@@ -38,7 +39,7 @@
     text-align: center;
     justify-content: space-evenly;
     font-weight: 500;
-    color: #DC2ADE;
+    color:$fucsia;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     &:hover{
@@ -132,11 +133,11 @@
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
 .formContainerFooter{
-    width: 30%;
+    width: 50%;
     margin: 0.5rem auto;
     padding: 1rem 1rem;
     background-color:rgba(199, 53, 192, 0.8);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 .form{
     text-align: center;
