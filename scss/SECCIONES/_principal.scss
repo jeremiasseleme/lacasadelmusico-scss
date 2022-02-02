@@ -1,3 +1,19 @@
+// EXTEND
+%extendDesafio{
+    width: 90%;
+    border: 3px solid black;
+    background-color: $azul;
+}
+
+// MIXIN
+@mixin mixinDesafio ($color, $alineacion, $tamanio) {
+    color: $color;
+    text-align: $alineacion;
+    font-size: $tamanio;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
 /* SLIDER */
 .main{
     width:auto;
@@ -9,6 +25,7 @@
     }
     /* SECTION INDEX */
     .sectionIndex{
+        @extend %extendDesafio;
         width: 75%;
         margin: 1rem auto;
         padding: 0.5rem;
@@ -43,6 +60,7 @@
     color:$fucsia;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
+    @extend %extendDesafio;
     &:hover{
         transform: rotateY(25deg) scale(1.1);
         cursor: pointer;
@@ -62,6 +80,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    @extend %extendDesafio;
     .cont_productos{
         height: 350px;
         width: 200px;
@@ -92,6 +111,7 @@
             margin: 0 auto;
             border-bottom: solid 1px $azul;
             border-top: solid 1px $azul;
+            @include mixinDesafio($azul,center, 15px);
             h2{
                 font-size: 0.99em;
                 text-align: center;
@@ -112,6 +132,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include mixinDesafio($fucsia,justify, 20px);
             .box_precio{
                 width: 80px;
                 .precio1{
@@ -189,12 +210,13 @@
 
 /* PAGINA IMG */
 .imgPagina{
-    max-height: 20rem;
+    max-height: 22rem;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     img{
         display: block;
         width: 95%;
         margin:1rem auto;
+        border-radius: 20px;
     }
 }

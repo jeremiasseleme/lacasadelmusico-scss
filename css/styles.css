@@ -10,6 +10,21 @@ body {
   /* font-family: 'Luxurious Roman', cursive; */
   font-family: 'Roboto Condensed', sans-serif; }
 
+.mapa1 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #DC2ADE; }
+
+.mapa2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #DC2ADE; }
+
+.mapa3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #DC2ADE; }
+
 /* HEADER */
 .header {
   position: sticky;
@@ -31,17 +46,18 @@ body {
       justify-content: center; }
       .header .nav .nav_ul .nav_li {
         list-style: none;
-        padding: 10px 10px; }
+        padding: 1rem; }
         .header .nav .nav_ul .nav_li .nav_links {
           color: #DC2ADE;
-          padding: 10px;
           text-decoration: none;
+          padding: 0.7rem;
+          margin: 1rem;
           font-size: 17px;
           font-weight: 600;
-          border-radius: 10px; }
+          border-radius: 20px; }
           .header .nav .nav_ul .nav_li .nav_links:hover {
-            border-top: #323EDD groove 1px;
-            transition: all 0.5s ease; }
+            border-top: #323EDD solid 2px;
+            transition: all 0.5s ease-out; }
         .header .nav .nav_ul .nav_li .nav_sub {
           list-style: none;
           margin-top: 15px;
@@ -59,11 +75,15 @@ body {
             border-bottom: groove 1px black;
             transition: all 0.9s ease; }
             .header .nav .nav_ul .nav_li .nav_sub .sub_li .sub_links {
-              /* color: #DC2ADE; */
               color: white;
               text-decoration: none;
               font-size: 15px;
               font-weight: 400; }
+              .header .nav .nav_ul .nav_li .nav_sub .sub_li .sub_links:hover {
+                background-color: black;
+                border-radius: 10px;
+                transform: scale(1.07);
+                transition: all 1s ease; }
   .header .img_logo {
     width: 80%;
     animation-name: logo;
@@ -80,6 +100,11 @@ body {
   100% {
     transform: scale(1);
     filter: brightness(1); } }
+
+.main .sectionIndex, .destacados, .div_destacados {
+  width: 90%;
+  border: 3px solid black;
+  background-color: #323EDD; }
 
 /* SLIDER */
 .main {
@@ -160,7 +185,12 @@ body {
       width: 90%;
       margin: 0 auto;
       border-bottom: solid 1px #323EDD;
-      border-top: solid 1px #323EDD; }
+      border-top: solid 1px #323EDD;
+      color: #323EDD;
+      text-align: center;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-decoration: line-through; }
       .div_destacados .cont_productos .info h2 {
         font-size: 0.99em;
         text-align: center;
@@ -176,7 +206,12 @@ body {
       margin: auto;
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      color: #DC2ADE;
+      text-align: justify;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: line-through; }
       .div_destacados .cont_productos .precio .box_precio {
         width: 80px; }
         .div_destacados .cont_productos .precio .box_precio .precio1 {
@@ -245,13 +280,14 @@ body {
 
 /* PAGINA IMG */
 .imgPagina {
-  max-height: 20rem;
+  max-height: 22rem;
   overflow: hidden;
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
   .imgPagina img {
     display: block;
     width: 95%;
-    margin: 1rem auto; }
+    margin: 1rem auto;
+    border-radius: 20px; }
 
 /* FOOTER */
 .footer {

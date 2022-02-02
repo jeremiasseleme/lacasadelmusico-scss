@@ -1,0 +1,14 @@
+
+$textoColores: (
+    mapa1: 12px,
+    mapa2: 16px,
+    mapa3: 20px,
+);
+
+@each $frases, $tamanio in $textoColores {
+    .#{$frases}{
+        font-size: $tamanio;
+        font-weight: 600;
+        color: $fucsia;
+    }
+}
