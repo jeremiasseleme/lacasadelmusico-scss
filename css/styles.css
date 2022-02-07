@@ -101,11 +101,6 @@ body {
     transform: scale(1);
     filter: brightness(1); } }
 
-.main .sectionIndex, .destacados, .div_destacados {
-  width: 90%;
-  border: 3px solid black;
-  background-color: #323EDD; }
-
 /* SLIDER */
 .main {
   width: auto;
@@ -163,7 +158,7 @@ body {
     height: 350px;
     width: 200px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    margin: 15px 15px;
+    margin: 2px 2px;
     background-color: white;
     border: 2px solid #323EDD;
     border-radius: 10px;
@@ -185,12 +180,7 @@ body {
       width: 90%;
       margin: 0 auto;
       border-bottom: solid 1px #323EDD;
-      border-top: solid 1px #323EDD;
-      color: #323EDD;
-      text-align: center;
-      font-size: 15px;
-      text-transform: uppercase;
-      text-decoration: line-through; }
+      border-top: solid 1px #323EDD; }
       .div_destacados .cont_productos .info h2 {
         font-size: 0.99em;
         text-align: center;
@@ -206,12 +196,7 @@ body {
       margin: auto;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      color: #DC2ADE;
-      text-align: justify;
-      font-size: 20px;
-      text-transform: uppercase;
-      text-decoration: line-through; }
+      align-items: center; }
       .div_destacados .cont_productos .precio .box_precio {
         width: 80px; }
         .div_destacados .cont_productos .precio .box_precio .precio1 {
@@ -328,4 +313,8 @@ body {
         display: none; */
   /* } */
   .formContainer {
-    width: 90%; } }
+    width: 90%; }
+  .cont_productos {
+    margin: 0;
+    padding: 0;
+    width: 100%; } }
