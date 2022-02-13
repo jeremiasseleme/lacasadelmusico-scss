@@ -10,21 +10,6 @@ body {
   /* font-family: 'Luxurious Roman', cursive; */
   font-family: 'Roboto Condensed', sans-serif; }
 
-.mapa1 {
-  font-size: 12px;
-  font-weight: 600;
-  color: #DC2ADE; }
-
-.mapa2 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #DC2ADE; }
-
-.mapa3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #DC2ADE; }
-
 /* HEADER */
 .header {
   position: sticky;
@@ -32,11 +17,21 @@ body {
   z-index: 10;
   /* NAVEGADOR */
   /* LOGO Y BUSCADOR */ }
+  .header .btnn {
+    color: white;
+    font-weight: 500;
+    background-color: #040f9e;
+    padding: 1rem;
+    border-style: none;
+    border-radius: 10px; }
+    .header .btnn:hover {
+      background-color: #14195f;
+      transition: all 0.5s ease; }
   .header .nav {
     background: rgba(255, 255, 255, 0.6);
     width: 97%;
     margin: 1rem auto;
-    border-radius: 10px;
+    border-radius: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -50,8 +45,8 @@ body {
         .header .nav .nav_ul .nav_li .nav_links {
           color: #DC2ADE;
           text-decoration: none;
-          padding: 0.7rem;
-          margin: 1rem;
+          padding: 0.5rem;
+          margin: 0.5rem;
           font-size: 17px;
           font-weight: 600;
           border-radius: 20px; }
@@ -109,14 +104,15 @@ body {
     width: 95%;
     max-height: 35rem;
     overflow: hidden;
-    margin: 30px auto; }
+    margin: 30px auto;
+    border-radius: 20%; }
   .main .sectionIndex {
     width: 75%;
     margin: 1rem auto;
     padding: 0.5rem;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    border-radius: 15px; }
+    border-radius: 20%; }
     .main .sectionIndex .tdestacado {
       color: #DC2ADE;
       font-weight: bold;
@@ -128,17 +124,15 @@ body {
 
 /* PRODUCTOS DESTACADOS */
 .destacados {
-  width: 55%;
-  height: auto;
+  width: 50%;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 15px;
   text-align: center;
-  justify-content: space-evenly;
   font-weight: 500;
   color: #DC2ADE;
   background: rgba(0, 0, 0, 0.9);
-  border-radius: 10px; }
+  border-radius: 20%; }
   .destacados:hover {
     transform: rotateY(25deg) scale(1.1);
     cursor: pointer;
@@ -146,9 +140,10 @@ body {
 
 .div_destacados {
   width: 92%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
   margin: 2rem auto;
   padding: 1rem;
+  border: black solid 0.1px;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -156,12 +151,12 @@ body {
   flex-wrap: wrap; }
   .div_destacados .cont_productos {
     width: 270px;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1.5rem;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    margin: 2px 2px;
+    margin: 7px 7px;
     background-color: white;
     border: 2px solid #323EDD;
-    border-radius: 10px;
+    border-radius: 20%;
     transition: all 0.7s; }
     .div_destacados .cont_productos:hover {
       transform: translateY(-5px) scale(1.05);
@@ -214,7 +209,7 @@ body {
   margin: 1rem auto;
   padding: 1.5rem 1rem;
   background-color: #323EDD;
-  border-radius: 0.5rem;
+  border-radius: 20%;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3); }
 
 .formContainerFooter {
@@ -222,7 +217,7 @@ body {
   margin: 0.5rem auto;
   padding: 1rem 1rem;
   background-color: rgba(199, 53, 192, 0.8);
-  border-radius: 1rem; }
+  border-radius: 20%; }
 
 .form {
   text-align: center; }
@@ -230,7 +225,7 @@ body {
 .form__label {
   display: inline-block;
   width: 60%;
-  text-align: left;
+  text-align: center;
   color: white;
   font-weight: 600; }
 
@@ -243,7 +238,8 @@ body {
   border: none;
   border-bottom: solid 1px #c87d5d;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  text-align: center; }
 
 .form__textarea {
   height: 5rem;
@@ -286,7 +282,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 15px; }
+  border-radius: 20%; }
   .footer .imgfooter {
     width: 90%;
     margin: -25px auto; }
@@ -298,6 +294,10 @@ body {
     text-align: center;
     color: black; }
 
+@media (max-width: 991px) {
+  .nav {
+    padding: 2.5rem 0.2rem; } }
+
 @media (max-width: 768px) {
   .formContainerFooter {
     width: 90%; }
@@ -308,4 +308,6 @@ body {
 
 @media (max-width: 469px) {
   .formContainer {
-    width: 90%; } }
+    width: 90%; }
+  .destacados {
+    width: 70%; } }

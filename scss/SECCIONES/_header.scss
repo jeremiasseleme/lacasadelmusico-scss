@@ -4,11 +4,23 @@
     top: 2px;
     z-index: 10;
     /* NAVEGADOR */
+    .btnn{
+        color: white;
+        font-weight: 500;
+        background-color: #040f9e;
+        padding: 1rem;
+        border-style: none;
+        border-radius: 10px;
+        &:hover{
+            background-color:#14195f;
+            transition: all 0.5s ease;
+        }
+    }
 .nav{
     background: rgba(255, 255, 255, 0.6);
     width: 97%;
     margin: 1rem auto;
-    border-radius: 10px;
+    border-radius: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,8 +34,8 @@
             .nav_links{
                 color: #DC2ADE;
                 text-decoration: none;
-                padding: 0.7rem;
-                margin: 1rem;
+                padding: 0.5rem;
+                margin: 0.5rem;
                 font-size: 17px;
                 font-weight: 600;
                 border-radius: 20px;
