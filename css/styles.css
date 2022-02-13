@@ -283,6 +283,12 @@ body {
   .footer .texto_footer {
     text-align: center;
     color: black; }
+  .footer .whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    border-radius: 50%; }
 
 @media (max-width: 768px) {
   .formContainerFooter {
@@ -290,10 +296,20 @@ body {
   .formContainer {
     width: 70%; }
   .div_destacados {
-    width: 99%; } }
+    width: 99%; }
+  .footer .whatsapp {
+    bottom: 20px;
+    right: 20px;
+    width: 70px; } }
 
 @media (max-width: 469px) {
   .formContainer {
     width: 90%; }
   .destacados {
-    width: 70%; } }
+    width: 70%; }
+  .footer .whatsapp {
+    bottom: 10px;
+    right: 10px;
+    width: 60px; }
+  .div_destacados .cont_productos {
+    width: 300px; } }
