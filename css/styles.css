@@ -17,21 +17,11 @@ body {
   z-index: 10;
   /* NAVEGADOR */
   /* LOGO Y BUSCADOR */ }
-  .header .btnn {
-    color: white;
-    font-weight: 500;
-    background-color: #040f9e;
-    padding: 1rem;
-    border-style: none;
-    border-radius: 10px; }
-    .header .btnn:hover {
-      background-color: #14195f;
-      transition: all 0.5s ease; }
   .header .nav {
     background: rgba(255, 255, 255, 0.6);
     width: 97%;
     margin: 1rem auto;
-    border-radius: 20%;
+    border-radius: 13%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -293,10 +283,6 @@ body {
   .footer .texto_footer {
     text-align: center;
     color: black; }
-
-@media (max-width: 991px) {
-  .nav {
-    padding: 2.5rem 0.2rem; } }
 
 @media (max-width: 768px) {
   .formContainerFooter {
