@@ -25,7 +25,8 @@
 
     /* NAVEGADOR */
     .nav {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(0, 0, 0, 0.9);
+        // background: rgba(255, 255, 255, 0.95);
         width: 97%;
         margin: 0.2rem auto;
         border-radius: 13%;
@@ -97,7 +98,7 @@
 
     /* LOGO Y BUSCADOR */
     .img_logo {
-        width: 80%;
+        width: 75%;
         animation-name: logo;
         animation-duration: 5s;
         animation-iteration-count: infinite;

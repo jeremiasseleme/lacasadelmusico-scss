@@ -33,7 +33,7 @@ body {
       text-decoration: none;
       color: white; }
   .header .nav {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(0, 0, 0, 0.9);
     width: 97%;
     margin: 0.2rem auto;
     border-radius: 13%;
@@ -86,7 +86,7 @@ body {
                 transform: scale(1.07);
                 transition: all 1s ease; }
   .header .img_logo {
-    width: 80%;
+    width: 75%;
     animation-name: logo;
     animation-duration: 5s;
     animation-iteration-count: infinite; }
