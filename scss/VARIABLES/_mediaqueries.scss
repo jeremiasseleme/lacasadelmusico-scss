@@ -1,7 +1,21 @@
 
 // /* MEDIA QUERIES */
-
+@media(max-width:991px){
+    .header .nav{
+        width: 80%;
+        ul{
+            flex-direction: column;
+        }
+    }
+    
+}
 @media(max-width:768px){
+    .header .indice{
+        display: none;
+    }
+    .quienesSomosNone{
+        display: none;
+    }
     .formContainerFooter{
         width: 90%;
     }
@@ -19,10 +33,19 @@
 }
 
 @media(max-width:469px){
+    .header .nav{
+        width: 100%;
+    }
+    .main .sectionIndex{
+        display: none;
+    }
     .formContainer{
         width: 90%;
     }
     .destacados{
+        width: 70%;
+    }
+    .main .sectionmapa .dondeEstamos{
         width: 70%;
     }
     .footer .whatsapp{

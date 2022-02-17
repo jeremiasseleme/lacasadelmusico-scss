@@ -31,6 +31,13 @@
 
 <body>
     <header class="header container-fluid">
+        <nav class="indice">
+            <ul>
+                <li><a href="#quienesSomos">Quienes Somos</a></li>
+                <li><a href="#productosDestacados">Productos Destacados</a></li>
+                <li><a href="#dondeEstamos">Donde estamos</a></li>
+            </ul>
+        </nav>
         <!-- __________________________ -->
         <!-- NAVEGADOR -->
         <!-- __________________________ -->
@@ -47,7 +54,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav_ul navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="nav_ul me-auto mb-2 mb-lg-0">
                         <li class="nav_li nav-item">
                             <a class="nav_links active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
@@ -80,6 +87,13 @@
     <!-- CONTENIDO PRINCIPAL -->
     <!-- ____________________ -->
     <main class="main">
+        <!-- SLOGAN -->
+        <article class="sectionIndex">
+            <h2 class="textoSection"><span class="tdestacado">La Casa del Musico </span> Tu mejor opcion en
+                instrumentos!
+            </h2>
+        </article>
+        <a name="quienesSomos"></a>
         <!-- __________________________ -->
         <!-- SLIDER -->
         <!-- __________________________ -->
@@ -124,20 +138,38 @@
                 </button>
             </div>
         </section>
-        <!-- SLOGAN Y DESCRIPCION DE LA EMPRESA -->
-        <article class="sectionIndex">
-            <h2 class="textoSection"><span class="tdestacado">La Casa del Musico </span> Tu mejor opcion en
-                instrumentos!
-
-            </h2>
-            <p class="textoSection fs-5"> Somos una empresa familiar que compartimos la misma pasion que nuestros clientes y queremos brindarles la mejor atencion y la mejor calidad
-                <span class="tdestacado">Los esperamos!</span>
-            </p>
-        </article>
+        <!-- __________________________ -->
+        <!-- QUIENES SOMOS -->
+        <!-- __________________________ -->
+        <div class="quienesSomosNone">
+            <a name="quienesSomos">
+                <h2 class="quienesSomos">Quienes Somos</h2>
+                <section class="tQuienesSomos">
+                    <p> <span class="spanQuienesSomos">La Casa del Musico</span> es una empresa
+                        importadora y distribuidora de instrumentos y accesorios musicales,
+                        con más de 40 años de presencia ininterrumpida en el mercado argentino de la música.</p>
+                    <p>
+                        <span class="spanQuienesSomos">Nuestra empresa</span> está formada sobre las bases de un gran
+                        equipo de trabajo, con personas de gran
+                        experiencia en el rubro y conocimiento académico reconocido, que dan excelencia a nuestro
+                        trabajo.
+                    </p>
+                    <a name="productosDestacados">
+                        <p>
+                            <span class="spanQuienesSomos">Estudiamos y analizamos</span> constantemente nuestro
+                            mercado, buscando las nuevas tendencias y necesidades de
+                            un público dinámico en un campo en constante evolución, llenos de gustos y necesidades muy
+                            variadas.
+                            Pero por sobre todas las cosas, está el amor que ponemos día a día por la música, tratando
+                            de crecer
+                            constantemente, sin olvidar jamás ese sentimiento.
+                        </p>
+                </section>
+        </div>
 
         <!-- PRODUCTOS DESTACADOS -->
         <section>
-            <h1 class="destacados">PRODUCTOS DESTACADOS</h1>
+            <h1 class="destacados">Productos Destacados</h1>
             <div class="div_destacados">
                 <div class="cont_productos">
                     <div class="card">
@@ -345,6 +377,13 @@
                 </div>
             </div>
         </section>
+        <a name="dondeEstamos"></a>
+        <section class="sectionmapa">
+            <h2 class="dondeEstamos">Donde Estamos</h2>
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.9934450402875!2d-64.18370538485192!3d-31.414306681404888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a29d029024e3%3A0xac1333d6af7db7cf!2sAv.%20Emilio%20Olmos%20110%2C%20X5000%20EOO%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1645104898204!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
     </main>
     <!-- _________________________ -->
     <!-- FOOTER -->
@@ -363,7 +402,7 @@
         <div class="formContainerFooter">
             <!-- Formulario Suscripcion -->
             <form class="form" action="#" method="GET">
-                <label for="email" class="form__label">Enterate lo nuevo</label>
+                <label for="email" class="form__label">Enterate lo nuevo!</label>
                 <input type="email" class="form__input" placeholder="Ingresa tu email" name="email" id="email" required>
                 <input type="submit" class="form__input form__input--submit" value="Suscribite">
             </form>

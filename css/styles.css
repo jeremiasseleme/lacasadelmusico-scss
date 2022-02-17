@@ -17,10 +17,25 @@ body {
   z-index: 10;
   /* NAVEGADOR */
   /* LOGO Y BUSCADOR */ }
+  .header .indice {
+    font-size: 12px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #323EDD; }
+    .header .indice ul {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .header .indice li {
+      list-style: none;
+      padding: 0.4rem 1rem; }
+    .header .indice a {
+      text-decoration: none;
+      color: white; }
   .header .nav {
     background: rgba(255, 255, 255, 0.6);
     width: 97%;
-    margin: 1rem auto;
+    margin: 0.2rem auto;
     border-radius: 13%;
     display: flex;
     justify-content: space-between;
@@ -28,7 +43,8 @@ body {
     .header .nav .nav_ul {
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      flex-wrap: wrap; }
       .header .nav .nav_ul .nav_li {
         list-style: none;
         padding: 1rem; }
@@ -90,27 +106,71 @@ body {
 .main {
   width: auto;
   /* SECTION INDEX */ }
-  .main .slider {
-    width: 95%;
-    max-height: 35rem;
-    overflow: hidden;
-    margin: 30px auto;
-    border-radius: 20%; }
   .main .sectionIndex {
     width: 75%;
     margin: 1rem auto;
     padding: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
-    border-radius: 20%; }
+    border-radius: 20%;
+    color: white; }
     .main .sectionIndex .tdestacado {
       color: #DC2ADE;
       font-weight: bold;
       font-size: larger; }
-    .main .sectionIndex .textoSection {
-      text-align: center;
-      padding: 0.05rem;
-      font-weight: bold; }
+  .main .quienesSomos {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    color: #DC2ADE;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20%; }
+    .main .quienesSomos:hover {
+      transform: rotateY(25deg) scale(1.1);
+      cursor: pointer;
+      transition: all 0.5s ease-out; }
+  .main .tQuienesSomos {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 20%;
+    text-align: center; }
+    .main .tQuienesSomos .spanQuienesSomos {
+      color: #DC2ADE;
+      font-size: 24px; }
+  .main .slider {
+    width: 95%;
+    max-height: 35rem;
+    overflow: hidden;
+    margin: 1rem auto;
+    border-radius: 20%; }
+  .main .dondeEstamos {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    color: #DC2ADE;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20%; }
+    .main .dondeEstamos:hover {
+      transform: rotateY(25deg) scale(1.1);
+      cursor: pointer;
+      transition: all 0.5s ease-out; }
+  .main .sectionmapa {
+    margin: 1rem auto;
+    text-align: center; }
+    .main .sectionmapa .mapa {
+      width: 80vw;
+      height: 40vh; }
 
 /* PRODUCTOS DESTACADOS */
 .destacados {
@@ -131,7 +191,7 @@ body {
 .div_destacados {
   width: 92%;
   background-color: rgba(255, 255, 255, 0.1);
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 1rem;
   border: black solid 0.1px;
   border-radius: 15px;
@@ -219,7 +279,8 @@ body {
   color: white;
   font-weight: 600; }
 
-.form__input, .form__textarea {
+.form__input,
+.form__textarea {
   width: 60%;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -235,7 +296,8 @@ body {
   height: 5rem;
   resize: none; }
 
-.form__input:focus, .form__textarea:focus {
+.form__input:focus,
+.form__textarea:focus {
   outline: none; }
 
 .form__input--submit {
@@ -290,7 +352,17 @@ body {
     width: 80px;
     border-radius: 50%; }
 
+@media (max-width: 991px) {
+  .header .nav {
+    width: 80%; }
+    .header .nav ul {
+      flex-direction: column; } }
+
 @media (max-width: 768px) {
+  .header .indice {
+    display: none; }
+  .quienesSomosNone {
+    display: none; }
   .formContainerFooter {
     width: 90%; }
   .formContainer {
@@ -303,9 +375,15 @@ body {
     width: 70px; } }
 
 @media (max-width: 469px) {
+  .header .nav {
+    width: 100%; }
+  .main .sectionIndex {
+    display: none; }
   .formContainer {
     width: 90%; }
   .destacados {
+    width: 70%; }
+  .main .sectionmapa .dondeEstamos {
     width: 70%; }
   .footer .whatsapp {
     bottom: 10px;
