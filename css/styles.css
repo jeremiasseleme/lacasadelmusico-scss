@@ -38,8 +38,10 @@ body {
     margin: 0.2rem auto;
     border-radius: 13%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; }
+    .header .nav .hamburguesa {
+      color: white; }
     .header .nav .nav_ul {
       display: flex;
       align-items: center;

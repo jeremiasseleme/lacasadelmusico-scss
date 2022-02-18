@@ -31,8 +31,11 @@
         margin: 0.2rem auto;
         border-radius: 13%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        .hamburguesa{
+            color: white;
+        }
 
         .nav_ul {
             display: flex;
